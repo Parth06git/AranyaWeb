@@ -12,8 +12,8 @@ const blogsSchema = new Schema({
         require: true
     },
     img: {
-        data: Buffer,
-        contentType: String,
+        type: String,
+        require: true
     },
     date: {
         type: String,

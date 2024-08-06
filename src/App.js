@@ -12,24 +12,27 @@ import {
 } from "react-router-dom"
 import RecEventState from './context/recEvents/recEventState';
 import AddData from './Components/AddData';
+import BlogState from './context/blogs/blogState';
 
 
 function App() {
   return (
-    <RecEventState>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/blog' element={<Blog />} />
-          <Route exact path='/contact' element={<Contact />} />
-          <Route exact path='/members' element={<Members2 />} />
-          <Route exact path='/db/aranya/owner' element={<AddData />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </RecEventState>
+    <BlogState>
+      <RecEventState>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/about' element={<About />} />
+            <Route exact path='/blog' element={<Blog />} />
+            <Route exact path='/contact' element={<Contact />} />
+            <Route exact path='/members' element={<Members2 />} />
+            <Route exact path='/db/aranya/owner' element={<AddData />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </RecEventState>
+    </BlogState>
   );
 }
 

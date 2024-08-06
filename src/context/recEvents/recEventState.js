@@ -27,7 +27,7 @@ const RecEventState = (props) => {
         // Api calls
 
         const url = host + "/api/resEvent/create"
-        const response = await fetch(url, { // fail to fetch
+        const response = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

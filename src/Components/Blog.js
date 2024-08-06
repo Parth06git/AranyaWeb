@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react'
-import about from './img/about.jpg'
+import React, { useContext, useEffect } from 'react'
 import p3 from './img/p3.jpeg'
+import blogContext from '../context/blogs/blogContext'
+import BlogsItems from './BlogsItems'
 
 const Blog = () => {
 
+    const context = useContext(blogContext)
+    const { blog, getBlogs } = context
+
     useEffect(() => {
+        getBlogs()
         document.title = 'Aranya - Blogs'
     })
 
@@ -20,52 +25,9 @@ const Blog = () => {
             </div>
 
             <div className="container my-3">
-                <div className="row mt-4">
-                    <div className="col">
-                        <img src={about} className="rounded float-start" alt="Aranya" width="320rem" height="250rem" />
-                    </div>
-                    <div className="col">
-                        <h1 className="font-weight-bold, font-italic pt-2" >Trip1</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolores voluptatum vitae eius quas quasi ullam saepe similique harum, cum eum suscipit culpa explicabo soluta adipisci consectetur at reiciendis itaque?</p>
-                        <p>Nobis veritatis impedit veniam, soluta tempore adipisci modi exercitationem aut molestias minus. Quisquam, dolores! Iusto dolorum sed, recusandae pariatur tempora consectetur obcaecati ad vero molestiae cumque. Placeat, animi ab! Illo.</p>
-                        <p className="card-title" style={{
-                            fontSize: 'small'
-                        }} >On 9/9/2023</p>
-                    </div>
-                </div>
-                <hr className="featurette-divider" />
-                <div className="row mt-4">
-                    <div className="col">
-                        <img src={about} className="rounded float-start" alt="Aranya" width="320rem" height="250rem" />
-                    </div>
-                    <div className="col">
-                        <h1 className="font-weight-bold, font-italic pt-2" >Trip2</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolores voluptatum vitae eius quas quasi ullam saepe similique harum, cum eum suscipit culpa explicabo soluta adipisci consectetur at reiciendis itaque?</p>
-                        <p>Nobis veritatis impedit veniam, soluta tempore adipisci modi exercitationem aut molestias minus. Quisquam, dolores! Iusto dolorum sed, recusandae pariatur tempora consectetur obcaecati ad vero molestiae cumque. Placeat, animi ab! Illo.</p>
-                    </div>
-                </div>
-                <hr className="featurette-divider" />
-                <div className="row mt-4">
-                    <div className="col">
-                        <img src={about} className="rounded float-start" alt="Aranya" width="320rem" height="250rem" />
-                    </div>
-                    <div className="col">
-                        <h1 className="font-weight-bold, font-italic pt-2" >Trip3</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolores voluptatum vitae eius quas quasi ullam saepe similique harum, cum eum suscipit culpa explicabo soluta adipisci consectetur at reiciendis itaque?</p>
-                        <p>Nobis veritatis impedit veniam, soluta tempore adipisci modi exercitationem aut molestias minus. Quisquam, dolores! Iusto dolorum sed, recusandae pariatur tempora consectetur obcaecati ad vero molestiae cumque. Placeat, animi ab! Illo.</p>
-                    </div>
-                </div>
-                <hr className="featurette-divider" />
-                <div className="row my-4">
-                    <div className="col">
-                        <img src={about} className="rounded float-start" alt="Aranya" width="320rem" height="250rem" />
-                    </div>
-                    <div className="col">
-                        <h1 className="font-weight-bold, font-italic pt-2" >Trip4</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolores voluptatum vitae eius quas quasi ullam saepe similique harum, cum eum suscipit culpa explicabo soluta adipisci consectetur at reiciendis itaque?</p>
-                        <p>Nobis veritatis impedit veniam, soluta tempore adipisci modi exercitationem aut molestias minus. Quisquam, dolores! Iusto dolorum sed, recusandae pariatur tempora consectetur obcaecati ad vero molestiae cumque. Placeat, animi ab! Illo.</p>
-                    </div>
-                </div>
+                {blog.map((blog) => {
+                    return <BlogsItems blogs={blog} key={blog._id} />
+                })}
             </div>
         </>
     )
