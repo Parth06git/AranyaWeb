@@ -22,7 +22,7 @@
   "scripts": {
     "both": "concurrently \"npm run start\" \"nodemon backend/index.js\" ",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm install && npm install --prefix backend && npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
