@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/AranyaWeb/static/css/main.7e602f58.css",
-    "main.js": "/AranyaWeb/static/js/main.c774bba3.js",
-    "static/js/787.0d2b66df.chunk.js": "/AranyaWeb/static/js/787.0d2b66df.chunk.js",
-    "static/media/banner.png": "/AranyaWeb/static/media/banner.896137787046ed837f10.png",
-    "static/media/cafeteria.png": "/AranyaWeb/static/media/cafeteria.f33027d1fb34e5cd0715.png",
-    "static/media/p1.jpeg": "/AranyaWeb/static/media/p1.a31248c4f9b86899e00c.jpeg",
-    "static/media/p3.jpeg": "/AranyaWeb/static/media/p3.2c78e2c783dfd3734bb0.jpeg",
-    "static/media/about.jpg": "/AranyaWeb/static/media/about.4fb954bf3bfaab30b56b.jpg",
-    "static/media/user2.jpg": "/AranyaWeb/static/media/user2.0d20d0f69481da48ef11.jpg",
-    "static/media/user1.jpg": "/AranyaWeb/static/media/user1.e0fc14f92d25b077b94c.jpg",
-    "static/media/p2.jpeg": "/AranyaWeb/static/media/p2.ef79b527cb76599631e2.jpeg",
-    "index.html": "/AranyaWeb/index.html",
-    "main.7e602f58.css.map": "/AranyaWeb/static/css/main.7e602f58.css.map",
-    "main.c774bba3.js.map": "/AranyaWeb/static/js/main.c774bba3.js.map",
-    "787.0d2b66df.chunk.js.map": "/AranyaWeb/static/js/787.0d2b66df.chunk.js.map"
+    "main.css": "/ScribblesWeb/static/css/main.7e602f58.css",
+    "main.js": "/ScribblesWeb/static/js/main.59945fdc.js",
+    "static/js/787.ce000f29.chunk.js": "/ScribblesWeb/static/js/787.ce000f29.chunk.js",
+    "static/media/banner.png": "/ScribblesWeb/static/media/banner.896137787046ed837f10.png",
+    "static/media/cafeteria.png": "/ScribblesWeb/static/media/cafeteria.f33027d1fb34e5cd0715.png",
+    "static/media/p1.jpeg": "/ScribblesWeb/static/media/p1.a31248c4f9b86899e00c.jpeg",
+    "static/media/p3.jpeg": "/ScribblesWeb/static/media/p3.2c78e2c783dfd3734bb0.jpeg",
+    "static/media/about.jpg": "/ScribblesWeb/static/media/about.4fb954bf3bfaab30b56b.jpg",
+    "static/media/user2.jpg": "/ScribblesWeb/static/media/user2.0d20d0f69481da48ef11.jpg",
+    "static/media/user1.jpg": "/ScribblesWeb/static/media/user1.e0fc14f92d25b077b94c.jpg",
+    "static/media/p2.jpeg": "/ScribblesWeb/static/media/p2.ef79b527cb76599631e2.jpeg",
+    "index.html": "/ScribblesWeb/index.html",
+    "main.7e602f58.css.map": "/ScribblesWeb/static/css/main.7e602f58.css.map",
+    "main.59945fdc.js.map": "/ScribblesWeb/static/js/main.59945fdc.js.map",
+    "787.ce000f29.chunk.js.map": "/ScribblesWeb/static/js/787.ce000f29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e602f58.css",
-    "static/js/main.c774bba3.js"
+    "static/js/main.59945fdc.js"
   ]
 }
